@@ -25,5 +25,8 @@ route.get("/product", async (req, res) => {
     res.json({ message: err });
   }
 });
+route.get("/", async (req, res) => {
+  res.send("holla");
+});
 
 module.exports = route;
